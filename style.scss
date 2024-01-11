@@ -1,0 +1,206 @@
+.books-settings-wrap {
+    h2 {
+        color: #6A4152;
+        font-weight: bold!important;
+    }
+
+    #books-import-form {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        .button {
+            background: #6A4152;
+            margin: 20px 0px 30px;
+        }
+
+        textarea {
+            height: 110px;
+        }
+
+        .field {
+            min-width: 500px;
+        }
+
+        label {
+            margin-bottom: 5px;
+            margin-top: 20px;
+            font-weight: bold;
+            color: #6A4152;
+        }
+    }
+}
+
+.book-info-wrap {
+    display: flex;
+    flex-direction: column;
+    
+    label {
+        display: block;
+        font-weight: bold;
+        margin: 0 0 3px;
+        padding: 0;
+        line-height: 1.4;
+        font-size: 13px;
+    }
+
+    textarea, input {
+        width: 100%;
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+
+    textarea {
+        height: 110px;
+    }
+
+    input#custom_books_category {
+        margin-bottom: 10px;
+    }
+}
+
+.library-wrap {
+
+    * {
+        box-sizing: border-box;
+    }
+
+    .top-panel {
+        width: 100%;
+        background-color: #6A4152;
+        padding: 20px 10px;
+        margin-bottom: 10px;
+
+        h2 {
+            font-weight: bold;
+            margin: 0px;
+            text-align: center;
+            width: 100%;
+            color: #fff;
+        }
+    }
+
+    .alphabet {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 80%;
+        margin: auto;
+        flex-wrap: wrap;
+
+        span {
+            font-size: 14px;
+            color: #6A4152;
+            width: 28px;
+            height: 28px;
+            border: 1px solid #6A4152;
+            margin: 2px;
+            display: block;
+            font-weight: 500;
+            text-align: center;
+            line-height: 28px;
+            cursor: pointer;
+        }
+
+        span.active {
+            background-color: #6A4152;
+            color: #fff;
+        }
+    }
+
+    .book-list {
+        margin-top: 50px;
+        margin-bottom: 40px;
+        display: flex;
+        flex-direction: column;
+
+        .book {
+            padding-left: 28px;
+            position: relative;
+            margin-bottom: 40px;
+            display: none;
+            
+            .icon {
+                position: absolute;
+                top: 5px;
+                left: 0px;
+                font-weight: bold;
+            }
+
+            p {
+                margin: 0px;
+            }
+        }
+    }
+
+    .pagination {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+
+        .arrow {
+            font-size: 14px;
+            color: #6A4152;
+            width: 28px;
+            height: 28px;
+            border: 1px solid #6A4152;
+            margin: 2px;
+            display: block;
+            font-weight: 500;
+            text-align: center;
+            line-height: 25px;
+            cursor: pointer;
+            border-radius: 50px;
+
+            &:hover {
+                background-color: #6A4152;
+                color: #fff;
+            }
+        }
+
+        .pagination-numbers {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 10px;
+            flex-wrap: wrap;
+
+            .number {
+                font-size: 14px;
+                color: #6A4152;
+                width: 28px;
+                height: 28px;
+                margin: 3px;
+                display: block;
+                font-weight: 500;
+                text-align: center;
+                line-height: 25px;
+                cursor: pointer;
+                border-radius: 50px;
+    
+                &:hover {
+                    border: 1px solid #6A4152;
+                }
+            }
+
+            .active {
+                background-color: #6A4152;
+                color: #fff;
+            }
+        }
+    }
+
+    .bottom-panel {
+        width: 100%;
+        background-color: #6A4152;
+        padding: 20px 10px;
+        margin-top: 20px;
+
+        p {
+            font-weight: bold;
+            margin: 0px;
+            text-align: center;
+            width: 100%;
+            color: #fff;
+        }
+    }
+}
